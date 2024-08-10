@@ -240,42 +240,42 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .logo img {
+        width: 200px; /* Réduction de la taille de la logo sur mobile */
+        height: auto; /* Conserve le ratio de l'image */
+    }
+
     .menu-container {
-        background-color: var(--rose);
-    }
-
-    .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background-color: var(--rose);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .menu.active {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: block;
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-    }
-
-    .menu li {
-        margin: 1rem 0;
-        text-align: center;
+        padding: 0.5rem 0; /* Moins de padding sur mobile */
     }
 
     .feature-section {
-        flex-direction: column;
+        grid-template-columns: 1fr; /* Les éléments de la grille sur une seule colonne */
+        gap: 1rem; /* Réduction de l'écart entre les cartes */
     }
 
-    .feature-card {
-        margin-bottom: 2rem;
+    .feature-card, .special-card {
+        padding: 1rem; /* Réduction du padding pour mobile */
+    }
+
+    h1 {
+        font-size: 24px; /* Réduction de la taille des titres pour mobile */
+    }
+
+    p {
+        font-size: 16px; /* Ajustement de la taille du texte pour mobile */
+    }
+
+    .cta-button {
+        padding: 0.7rem 1.2rem; /* Ajustement de la taille du bouton pour mobile */
+    }
+
+    img {
+        max-width: 100%; /* S'assure que les images ne dépassent pas la largeur de l'écran */
+        height: auto; /* Conserve le ratio de l'image */
+    }
+
+    footer {
+        padding: 1rem 0; /* Réduction du padding du footer sur mobile */
     }
 }
