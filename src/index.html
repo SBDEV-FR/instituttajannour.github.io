@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Bienvenue sur Mon Site</h1>
+
+<form id="pricing-form">
+  <label for="course">Choisissez un cours :</label>
+  <select id="course" name="course">
+    <option value="100">Cours 1 - 100€</option>
+    <option value="200">Cours 2 - 200€</option>
+    <option value="300">Cours 3 - 300€</option>
+  </select>
+
+  <label for="hours">Nombre d'heures par semaine :</label>
+  <input type="number" id="hours" name="hours" min="1" max="40" value="1">
+
+  <label>Jours de la semaine :</label>
+  <div>
+    <input type="checkbox" name="days[]" value="1" id="monday">
+    <label for="monday">Lundi</label>
+    <input type="checkbox" name="days[]" value="1" id="tuesday">
+    <label for="tuesday">Mardi</label>
+    <input type="checkbox" name="days[]" value="1" id="wednesday">
+    <label for="wednesday">Mercredi</label>
+  </div>
+
+  <p>Total : <span id="total-price">0</span> €</p>
+
+  <button type="submit">Soumettre</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

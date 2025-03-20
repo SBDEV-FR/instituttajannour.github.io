@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+#pricing-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#pricing-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#pricing-form input,
+#pricing-form select,
+#pricing-form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#pricing-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#pricing-form button:hover {
+    background-color: #45a049;
+}
